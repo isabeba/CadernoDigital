@@ -16,7 +16,7 @@ if (isset($_SESSION['aluno'])) {
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Caderno Digital</title>
 
-  <!-- Fontes: Fredoka (título), Nunito (corpo) e Patrick Hand (rodapé) -->
+  <!-- Fontes: Fredoka (título), Nunito (corpo) e Patrick Hand (rodapé)  -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
