@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Links da Página</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(143, 99, 201, 1); /* Cor de fundo roxa */
+            font-family: 'Poppins', sans-serif; /* Fonte moderna e legível */
+            color: white; /* Cor do texto principal */
+            display: flex; /* Flexbox para centralizar tudo */
+            flex-direction: column; /* Organiza os itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Garante que o corpo ocupa toda a altura da tela */
+            margin: 0; /* Remove margem padrão */
+            text-align: center; /* Centraliza o texto */
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .link-container {
+            width: 90%; /* Largura do contêiner dos links */
+            max-width: 600px; /* Largura máxima para telas maiores */
+        }
+        .link-button {
+            display: block; 
+            background-color: #6C2B8E; 
+            color: white; 
+            text-decoration: none; 
+            padding: 1rem 1.5rem; 
+            margin-bottom: 1.5rem; 
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 600; 
+            transition: background-color 0.3s ease; 
+        }
+        .link-button:hover {
+            background-color: #551A7F;
+        }
+
+        /* Estilos do header */
+        header {
+            background-color: #ffffff; /* Lilás claro */
+            padding: 1rem;
+            width: 100%;
+            position: fixed; /* Fixa o header no topo */
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 40pt; /* Tamanho da fonte conforme solicitado */
+            color: #000000; /* Cor de texto para contrastar com o fundo claro */
+        }
+        
+        /* Estilos do footer */
+        footer {
+            background-color: #ffffff; /* Lilás claro */
+            padding: 1rem;
+            width: 100%;
+            position: fixed; /* Fixa o footer na parte inferior */
+            bottom: 0;
+            z-index: 10;
+            color: rgb(0, 0, 0);
+            font-size: 1.0rem;
+        }
+
+        /* Ajuste para que o conteúdo não seja escondido pelo header/footer */
+        .content-wrapper {
+            margin-top: 5rem; /* Ajusta a margem superior para o header */
+            margin-bottom: 5rem; /* Ajusta a margem inferior para o footer */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h2>Caderno digital</h2>
+    </header>
+
+    <div class="content-wrapper">
+        <h1 style="font-size: 22pt;">Conheça os Links da nossa página</h1>
+
+        <div class="link-container">
+            <!-- Links de redes sociais -->
+            <a href="https://www.instagram.com/c.digital_tcc?igsh=Z3NzNnk2a2Znd2x0" target="_blank" class="link-button">Nosso Instagram</a>
+            <a href="https://github.com/isabeba/CadernoDigital" target="_blank" class="link-button">Nosso GitHub</a>
+
+            <!-- Links para WhatsApp com 4 números diferentes -->
+            <a href="https://wa.me/5514991121470" target="_blank" class="link-button">WhatsApp - Isabella</a>
+            <a href="https://wa.me/5514997043391" target="_blank" class="link-button">WhatsApp - Luiz</a>
+            <a href="https://wa.me/5514991610322" target="_blank" class="link-button">WhatsApp - Maria</a>
+            <a href="https://wa.me/5514991932376" target="_blank" class="link-button">WhatsApp - Ana</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Caderno digital. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
