@@ -3,22 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lannding Page</title>
+    <title>Links da Página</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        section {
-            background-color: rgb(163, 101, 197);
+        body {
+            background-color: #A365C5; /* Cor de fundo roxa */
+            font-family: 'Poppins', sans-serif; /* Fonte moderna e legível */
+            color: white; /* Cor do texto principal */
+            display: flex; /* Flexbox para centralizar tudo */
+            flex-direction: column; /* Organiza os itens em coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Garante que o corpo ocupa toda a altura da tela */
+            margin: 0; /* Remove margem padrão */
+            text-align: center; /* Centraliza o texto */
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .link-container {
+            width: 90%; /* Largura do contêiner dos links */
+            max-width: 600px; /* Largura máxima para telas maiores */
+        }
+        .link-button {
+            display: block; 
+            background-color: #6C2B8E; 
+            color: white; 
+            text-decoration: none; 
+            padding: 1rem 1.5rem; 
+            margin-bottom: 1.5rem; 
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 600; 
+            transition: background-color 0.3s ease; 
+        }
+        .link-button:hover {
+            background-color: #551A7F;
         }
     </style>
 </head>
 <body>
-    <h1>Conheça os Links da nossa página</h1>
-    <section><strong>Nosso Instagram</strong>
-    aaaaaaaaaaaaaaaaa</section>
-    <section><strong>nosso git hub</strong>
-    aaaaaaaaaaaaaaaaaaaa</section>
-    <section><strong>celular da isabella</strong>aaaaaaaaaaaaaaaaa
-    </section>
 
+    <h1>Conheça os Links da nossa página</h1>
+
+    <div class="link-container">
+        <a href="https://www.instagram.com/seu_usuario/" target="_blank" class="link-button">Nosso Instagram</a>
+        <a href="https://github.com/seu_usuario/" target="_blank" class="link-button">Nosso GitHub</a>
+        <a href="https://api.whatsapp.com/send?phone=seucelular" target="_blank" class="link-button">Celular da Isabella</a>
+    </div>
 
 </body>
 </html>
