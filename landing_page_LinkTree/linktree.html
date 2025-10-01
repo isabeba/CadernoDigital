@@ -43,23 +43,71 @@
         .link-button:hover {
             background-color: #551A7F;
         }
+
+        /* Estilos do header */
+        header {
+            background-color: #D8BDE0; /* Lilás claro */
+            padding: 1rem;
+            width: 100%;
+            position: fixed; /* Fixa o header no topo */
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 20pt; /* Tamanho da fonte conforme solicitado */
+            color: #4B245C; /* Cor de texto para contrastar com o fundo claro */
+        }
+        
+        /* Estilos do footer */
+        footer {
+            background-color: #D8BDE0; /* Lilás claro */
+            padding: 1rem;
+            width: 100%;
+            position: fixed; /* Fixa o footer na parte inferior */
+            bottom: 0;
+            z-index: 10;
+            color: #4B245C;
+            font-size: 0.9rem;
+        }
+
+        /* Ajuste para que o conteúdo não seja escondido pelo header/footer */
+        .content-wrapper {
+            margin-top: 5rem; /* Ajusta a margem superior para o header */
+            margin-bottom: 5rem; /* Ajusta a margem inferior para o footer */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Conheça os Links da nossa página</h1>
+    <header>
+        <h2>Caderno digital</h2>
+    </header>
 
-    <div class="link-container">
-        <!-- Links de redes sociais -->
-        <a href="https://www.instagram.com/c.digital_tcc?igsh=Z3NzNnk2a2Znd2x0" target="_blank" class="link-button">Nosso Instagram</a>
-        <a href="https://github.com/isabeba/CadernoDigital" target="_blank" class="link-button">Nosso GitHub</a>
+    <div class="content-wrapper">
+        <h1>Conheça os Links da nossa página</h1>
 
-        <!-- Links para WhatsApp com 4 números diferentes -->
-        <a href="https://wa.me/5514991121470" target="_blank" class="link-button">WhatsApp - Isabella</a>
-        <a href="https://wa.me/5514997043391" target="_blank" class="link-button">WhatsApp - Luiz</a>
-        <a href="https://wa.me/5514991610322" target="_blank" class="link-button">WhatsApp - Maria</a>
-        <a href="https://wa.me/5514991932376" target="_blank" class="link-button">WhatsApp - Ana</a>
+        <div class="link-container">
+            <!-- Links de redes sociais -->
+            <a href="https://www.instagram.com/c.digital_tcc?igsh=Z3NzNnk2a2Znd2x0" target="_blank" class="link-button">Nosso Instagram</a>
+            <a href="https://github.com/isabeba/CadernoDigital" target="_blank" class="link-button">Nosso GitHub</a>
+
+            <!-- Links para WhatsApp com 4 números diferentes -->
+            <a href="https://wa.me/5514991121470" target="_blank" class="link-button">WhatsApp - Isabella</a>
+            <a href="https://wa.me/5514997043391" target="_blank" class="link-button">WhatsApp - Luiz</a>
+            <a href="https://wa.me/5514991610322" target="_blank" class="link-button">WhatsApp - Maria</a>
+            <a href="https://wa.me/5514991932376" target="_blank" class="link-button">WhatsApp - Ana</a>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2025 Caderno digital. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
