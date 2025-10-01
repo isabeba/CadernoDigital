@@ -28,59 +28,20 @@
             width: 90%; /* Largura do contêiner dos links */
             max-width: 600px; /* Largura máxima para telas maiores */
         }
-        .link-container form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem; /* Espaço entre os elementos do formulário */
-            align-items: center;
-        }
-        .form-control {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .form-control label {
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        .form-control input[type="text"] {
-            width: 100%;
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            border: none;
-            font-size: 1.2rem;
-            text-align: center; /* Centraliza o texto no campo */
-        }
-        .form-control button {
+        .link-button {
             display: block; 
             background-color: #6C2B8E; 
             color: white; 
             text-decoration: none; 
             padding: 1rem 1.5rem; 
-            margin-top: 1.5rem; /* Espaço acima do botão */
+            margin-bottom: 1.5rem; 
             border-radius: 10px;
             font-size: 1.2rem;
             font-weight: 600; 
             transition: background-color 0.3s ease; 
-            border: none;
-            cursor: pointer;
-            width: 100%;
         }
-        .form-control button:hover {
+        .link-button:hover {
             background-color: #551A7F;
-        }
-        
-        /* Estilos para o campo de 4 dígitos */
-        .otp-input {
-            letter-spacing: 2rem; /* Espaçamento entre os caracteres para simular 4 campos */
-            text-align: center;
-            max-width: 15rem; /* Ajusta a largura para caber 4 dígitos espaçados */
-        }
-        .otp-input::placeholder {
-            letter-spacing: normal;
-            text-align: center;
         }
     </style>
 </head>
@@ -89,23 +50,15 @@
     <h1>Conheça os Links da nossa página</h1>
 
     <div class="link-container">
-        <form>
-            <div class="form-control">
-                <label for="codigo-4-digitos">Digite o código de 4 números:</label>
-                <input 
-                    type="text" 
-                    id="codigo-4-digitos" 
-                    class="otp-input"
-                    maxlength="4"
-                    pattern="\d{4}"
-                    placeholder="____"
-                    required
-                >
-            </div>
-            <div class="form-control">
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
+        <!-- Links de redes sociais -->
+        <a href="https://www.instagram.com/c.digital_tcc?igsh=Z3NzNnk2a2Znd2x0" target="_blank" class="link-button">Nosso Instagram</a>
+        <a href="https://github.com/isabeba/CadernoDigital" target="_blank" class="link-button">Nosso GitHub</a>
+
+        <!-- Links para WhatsApp com 4 números diferentes -->
+        <a href="https://wa.me/5514991121470" target="_blank" class="link-button">WhatsApp da Isabella</a>
+        <a href="https://wa.me/5511987654321" target="_blank" class="link-button">WhatsApp do Contato 2</a>
+        <a href="https://wa.me/5521998765432" target="_blank" class="link-button">WhatsApp do Contato 3</a>
+        <a href="https://wa.me/5531987654321" target="_blank" class="link-button">WhatsApp do Contato 4</a>
     </div>
 
 </body>
