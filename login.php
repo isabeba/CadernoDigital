@@ -22,8 +22,8 @@ if (isset($_SESSION['aluno'])) {
 
   <style>
     :root{
-      --lilac: #8f63c9;
-      --lilac-dark: #7c4fb3;
+      --lilac: rgba(143, 99, 201, 1);
+      --lilac-dark: rgba(124, 79, 179, 1);
       --white: #ffffff;
       --header-h: 90px;
       --footer-h: 120px;
