@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['aluno'])) {
-  header("Location: /TCC/login.php");
+  header("Location: /aluno/pagina_inicial.php");
   exit();
 }
 

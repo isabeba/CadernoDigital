@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['aluno'])) {
+  header("Location: /login.php");
+  exit();
+}
 
 ?>
 
@@ -13,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="./pagina_inicial.php">
          <img class="logo" src="../logo Caderno Digital.png" alt="Logo" width="60" height="50" class="d-inline-block align-text-top">
         Caderno Digital</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,24 +27,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="">lala</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Agenda</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Para treinar
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="/tcc_quiz/quiz_app/index.php">Questões</a></li>
+            <li><a class="dropdown-item" href="#">Meu desenpenho</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Prova Mensal</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link active" href="/logout.php" >Sair</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
